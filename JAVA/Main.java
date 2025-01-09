@@ -2,11 +2,14 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+
+// For input
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Enter first number: ");
         double num1 = scanner.nextDouble();
 
+// For operation
         System.out.println("Enter an operator (+, -, *, /): ");
         char operator = scanner.next().charAt(0);
 
@@ -37,6 +40,7 @@ public class Main {
                 System.out.println("Error! Invalid operator.");
                 return;
         }
+
 
         System.out.println("The result is: " + result);
     }
