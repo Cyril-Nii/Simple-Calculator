@@ -1,4 +1,4 @@
-# Multi-Language Calculator Project
+# Multi-Language Calculator
 
 ## Overview
 
