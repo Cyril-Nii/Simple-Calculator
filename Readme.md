@@ -20,7 +20,6 @@ Each calculator supports the following operations:
 - **JavaScript**: Essential for web development and dynamic interactions.
 - **C++**: A high-performance language with a focus on efficiency.
 - **C**: A foundational language for systems programming.
-- **PHP**: A server-side scripting language for web development.
 - Additional languages may be added as I learn more.
 
 ## Future Plans
