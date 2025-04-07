@@ -31,7 +31,23 @@ function clearDisplay(){
 
 const toggle = document.getElementById("theme-toggle");
 
-toggle.addEventListener("change", function () {
-    document.body.classList.toggle("light-mode");
+// Load saved theme on page load
+window.addEventListener("DOMContentLoaded", () => {
+    const savedTheme = localStorage.getItem("theme");
+
+    if (savedTheme === "light") {
+        document.body.classList.add("light-mode");
+        toggle.checked = true;
+    }
 });
 
+// Update theme and save preference
+toggle.addEventListener("change", function () {
+    if (this.checked) {
+        document.body.classList.add("light-mode");
+        localStorage.setItem("theme", "light");
+    } else {
+        document.body.classList.remove("light-mode");
+        localStorage.setItem("theme", "dark");
+    }
+});
