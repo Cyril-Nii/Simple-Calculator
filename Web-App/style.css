@@ -32,12 +32,16 @@ body {
     color: white;
 }
 
-
-#keys{
+#keys {
     display: grid;
-    grid-template-columns: repeat(4,0.2fr);
+    grid-template-columns: repeat(4, 1fr); 
     padding: 30px;
     gap: 1rem;
+}
+
+button.zero {
+    grid-column: span 2;
+    width: 100%; 
 }
 
 
