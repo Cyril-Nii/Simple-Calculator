@@ -1,6 +1,14 @@
-
 const display = document.getElementById('display');
 
+function toggleSign() {
+    if (display.value) {
+        if (display.value.startsWith('-')) {
+            display.value = display.value.slice(1);
+        } else {
+            display.value = '-' + display.value;
+        }
+    }
+}
 
 
 function appendToDisplay(input){
